@@ -8,11 +8,10 @@ const products = [
   { name: 'Headphones', price: 99, stock: 10 },
   { name: 'Smartwatch', price: 199, stock: 0 },
 ];
-// Output:
-// [
-// { name: 'iPhone', price: 999, stock: 5 },
-// { name: 'Laptop', price: 1299, stock: 10 }
-// ]
+// Output = [
+//    { name: 'iPhone', price: 999, stock: 5 },
+//    { name: 'Laptop', price: 1299, stock: 10 }
+//  ]
 
 const productsWithPriceGreaterThan100 = products.filter(
   (product) => product.price > 100 && product.stock
@@ -35,7 +34,7 @@ const studentsWithStatus = students.map((student) => ({
   status: student.grade > 7 ? 'Approved' : 'Disapproved',
 }));
 // console.log(studentsWithStatus);
-// Output:
+// Output =
 // [
 // { name: 'John', grade: 8, status: 'Approved' },
 // { name: 'Maria', grade: 6, status: 'Failed' },
@@ -70,4 +69,4 @@ const fruitWithBiggestName = fruits.reduce((prev, curr) => {
   return prev;
 }, '');
 // console.log(fruitWithBiggestName);
-// Output: 'pineapple'
+// Output = 'pineapple'

@@ -1,4 +1,4 @@
-const { sumDigits, isPrime, reverseNumber } = require("../utils");
+const { sumDigits, isPrime, reverseNumber } = require("../../utils");
 // 1. Advanced string manipulation exercise:
 // Given an array of full names, turn them into a single comma-separated string. Also, remove last names from given names.
 // Example:

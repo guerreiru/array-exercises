@@ -1,4 +1,4 @@
-const { groupBy } = require("../utils");
+const { groupBy } = require("../../utils");
 
 // 1. Calculate the sum of all elements in an array:
 const arrayToSum = [1, 2, 3, 4, 5];
@@ -16,7 +16,7 @@ const greatestValue = arrayToFindGreatestValue.reduce((acc, num) => {
 // console.log(greatestValue);
 
 // 3. Concatenate all elements of a string array into a single string:
-const arrayToConcatenate = ['Hello', 'world', 'do', 'JavaScript'];
+const arrayToConcatenate = ['Hello', 'world', 'of', 'JavaScript'];
 const concatenatedString = arrayToConcatenate.join(' ');
 // console.log(concatenatedString);
 
@@ -40,4 +40,4 @@ const arrayGroupBasedProperty = [
 ];
 
 const arrayGroupByCategory = groupBy(arrayGroupBasedProperty, 'category')
-console.log(arrayGroupByCategory);
+// console.log(arrayGroupByCategory);
