@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "general": "nodemon ./src/general-exercises/index.js",
-    "reduce": "nodemon ./src/exercises-reduce/index.js"
+    "solved": "nodemon ./src/general-exercises/solved/index.js",
+    "unsolved": "nodemon ./src/exercises-reduce/unsolved/index.js"
   },
   "keywords": [
     "array",
