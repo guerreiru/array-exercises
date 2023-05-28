@@ -1,0 +1,33 @@
+{
+  "name": "array-exercises",
+  "version": "1.0.0",
+  "description": "Project with exercises focused on array methods: map, reduce, filter, sort and others",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "general": "nodemon ./src/general-exercises/index.js",
+    "reduce": "nodemon ./src/exercises-reduce/index.js"
+  },
+  "keywords": [
+    "array",
+    "exercise",
+    "javascript",
+    "algorithms",
+    "data structur",
+    "array manipulation",
+    "programming practic",
+    "challenge",
+    "programming learnin",
+    "programming trainin",
+    "array methods",
+    "logic trainin",
+    "practice exercises",
+    "sorting algorithm",
+    "search algorithm"
+  ],
+  "author": "Fernando Guerreiro",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
