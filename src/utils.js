@@ -51,4 +51,29 @@ const groupBy = (array, key) => {
 	return groupedArray;
 };
 
-module.exports = { sumDigits, isPrime, reverseNumber, groupBy }
+const getValue = (array, key, valueType) => {
+	if (array.length === 0) {
+		return null;
+	}
+
+	const compareFunction = (a, b) => {
+		if (!valueType || valueType === 'highest') {
+			return b[key] - a[key];
+		} else {
+			return a[key] - b[key];
+		}
+	};
+
+	return array.reduce((acc, product) => {
+		if (compareFunction(acc, product) > 0) {
+			return product;
+		}
+		return acc;
+	});
+
+}
+
+const capitalizeFirstLetter = ([first, ...rest]) =>
+	first.toUpperCase() + rest.join('');
+
+module.exports = { sumDigits, isPrime, reverseNumber, groupBy, getValue, capitalizeFirstLetter }
